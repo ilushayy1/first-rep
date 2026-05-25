@@ -1,5 +1,6 @@
 body {
-    background-color: coral;
+    background-color: lightcoral;
+    font-family: "Inter", sans-serif;
 }
 .container {
     width: 360px;
@@ -11,6 +12,13 @@ body {
 button {
     background-color: #fff;
     border: none;
+    margin-bottom: 16px;
+}
+
+h1 {
+    margin: 0 0 12px 0;
+    font-size: 32px;
+    font-weight: 500;
 }
 button img {
     width: 30px;
@@ -23,6 +31,7 @@ button img {
     width: 100%;
     box-sizing: border-box;
     border: none;
+
 }
 .menu-position{
     display: inline-block;
@@ -30,8 +39,12 @@ button img {
     text-align: center;
 }
 h3 {
-    margin-top: 0;
+    margin: 15px 0 15px 0;
     font-size: 20px;
+    font-weight: 600;
+}
+h4 {
+    margin: 12px 0 12px 0;
 }
 .img-position {
     width: 74px;
@@ -41,6 +54,7 @@ h3 {
     line-height: 74px;
     border-radius: 14px;
     opacity: 0.6;
+    margin-bottom: 6px;
 }
 .img-position img {
     vertical-align: middle;
@@ -64,6 +78,8 @@ h3 {
     border: 1px solid #E5E5E5;
     box-sizing: border-box;
     box-shadow: 0 0 4px 0 #E5E5E5;
+
+    margin-bottom: 14px;
 }
 
 .items img {
