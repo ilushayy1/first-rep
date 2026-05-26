@@ -1,0 +1,79 @@
+.first-img {
+    width: 512px;
+    height: 512px;
+    background-color: #000000;
+}
+.first-img img {
+    position: absolute;
+    left: 100px;
+    top: 150px;
+}
+.flag {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    top: 350px;
+    left: 220px;
+    background-color: #2137FC;
+}
+.flag-1 {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    top: 380px;
+    left: 220px;
+    background-color: #FFD84B;
+}
+.big-1 {
+    width: 512px;
+    height: 271.5px;
+    background-color: #2137FC;
+}
+.big-2 {
+    width: 512px;
+    height: 271.5px;
+    background-color: #FFD84B;
+}
+.second-img img {
+    position: absolute;
+    bottom: 155px;
+    left: 60px;
+}
+.second-img {
+    position: absolute;
+    left: 450px;
+    bottom: 50px;
+    z-index: 10;
+}
+.third-image {
+    width: 512px;
+    height: 512px;
+    background-color: #ffffff;
+    border-top: 2px solid #2137FC;
+    border-bottom: 2px solid #2137FC;
+    position: absolute;
+    right: 250px;
+    bottom: -390px;
+
+}
+.elips {
+    width: 444px;
+    height: 444px;
+    background-color: #FFCE22;
+    border-radius: 50%;
+    position: absolute;
+    top: 34px;
+    left: 34px;
+}
+.second {
+    top: 34px;
+    left: 34px;
+    position: absolute;
+    z-index: 1;
+}
+.first {
+    bottom: 80px;
+    left: 72px;
+    position: absolute;
+    z-index: 2;
+}
