@@ -15,6 +15,7 @@
     top: 350px;
     left: 220px;
     background-color: #2137FC;
+    border-radius: 7px 7px 0 0;
 }
 .flag-1 {
     position: absolute;
@@ -23,6 +24,7 @@
     top: 380px;
     left: 220px;
     background-color: #FFD84B;
+    border-radius: 0 0 7px 7px;
 }
 .big-1 {
     width: 512px;
