@@ -1,54 +1,62 @@
+* {
+    box-sizing: border-box;
+}
 body {
-    background-color: #00A1C60D;
+    background-color: #F2F2F2;
+    font-family: "Inter", sans-serif;
 }
-span {
-    font-weight: 700;
+.main {
+    width: 1243px;
+    margin: 0 auto;
+    padding: 142px 0 128px;
 }
-.title {
-    font-size: 32px;
+h1>span {
+    font-weight: 600;
+    color: #2D3640;
+    letter-spacing: -0.5px;
+}
+h1 {
+    color: #2D3640;
+    font-size: 48px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 80px;
+    letter-spacing: -0.5px;
 }
 
 .description {
-    width: 500px;
-    font-size: 16px;
-    line-height: 25px;
-    color: #2B292D;
-}
-.text {
     width: 695px;
-    margin: 100px 330px 30px;
-}
-.developer-cards {
-    width: fit-content;
-    margin: 30px auto;
+    font-size: 20px;
+    line-height: 40px;
+    color: #2B292D;
+    font-weight: 400;
+    margin-bottom: 50px;
 }
 .card {
     width: 295px;
-    height: 450px;
     display: inline-block;
     vertical-align: top;
-    margin: 0 10px;
+    margin: 0 10px 0 0;
     background-color: #ffffff;
     border-radius: 12px;
-    padding: 30px;
+    padding: 58px 0 122px;
     box-sizing: border-box;
     text-align: center;
 }
-.card img {
-    margin: 15px auto;
-    border-radius: 50%;
-}
-.name {
-    margin-top: 20px;
-    margin-bottom: 6px;
+.card h4 {
+    color: #2D3640;
     font-size: 20px;
+    font-style: normal;
     font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.625px;
+    margin: 34px 0 4px;
 }
-.stack {
-    margin-top: 0;
-    color: #8A8A8A;
-    font-size: 14px;
-}
-.icons {
-    margin-top: 30px;
+.card p {
+    color: #4B4F52;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 33px;
 }
