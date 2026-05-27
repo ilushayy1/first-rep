@@ -1,0 +1,54 @@
+body {
+    background-color: #00A1C60D;
+}
+span {
+    font-weight: 700;
+}
+.title {
+    font-size: 32px;
+}
+
+.description {
+    width: 500px;
+    font-size: 16px;
+    line-height: 25px;
+    color: #2B292D;
+}
+.text {
+    width: 695px;
+    margin: 100px 330px 30px;
+}
+.developer-cards {
+    width: fit-content;
+    margin: 30px auto;
+}
+.card {
+    width: 295px;
+    height: 450px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.card img {
+    margin: 15px auto;
+    border-radius: 50%;
+}
+.name {
+    margin-top: 20px;
+    margin-bottom: 6px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.stack {
+    margin-top: 0;
+    color: #8A8A8A;
+    font-size: 14px;
+}
+.icons {
+    margin-top: 30px;
+}
