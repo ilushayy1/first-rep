@@ -44,7 +44,7 @@
 .second-img {
     position: absolute;
     left: 450px;
-    bottom: 50px;
+    bottom: -470px;
     z-index: 10;
 }
 .third-image {
@@ -54,8 +54,8 @@
     border-top: 2px solid #2137FC;
     border-bottom: 2px solid #2137FC;
     position: absolute;
-    right: 500px;
-    bottom: -390px;
+    right: -7px;
+    bottom: -911px;
 
 }
 .elips {
@@ -78,4 +78,10 @@
     left: 72px;
     position: absolute;
     z-index: 2;
+}
+.position {
+    position: relative;
+    margin: 0 auto;
+    width: 1400px;
+
 }

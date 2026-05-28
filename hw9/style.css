@@ -10,6 +10,9 @@ body {
     margin: 0 auto;
     padding: 142px 0 128px;
 }
+.card:last-child {
+    margin: 0;
+}
 h1>span {
     font-weight: 600;
     color: #2D3640;
