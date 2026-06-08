@@ -1,10 +1,8 @@
 body {
     font-family: "Nunito Sans", sans-serif;
-    background-color: #D9D9D9;
 }
 main {
     width: 90%;
-    margin: 100px auto;
     padding: 55px 100px 40px;
     background-color: #fff;
 }
