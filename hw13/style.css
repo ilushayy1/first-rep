@@ -1,0 +1,670 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: #fff;
+    color: #fff;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+/* MAIN FRAME — 1728 x 1117 */
+
+body > .container {
+    position: relative;
+    width: 100%;
+    max-width: 1728px;
+    min-height: 1117px;
+    margin: 0 auto;
+    padding: 232px 40px 48px;
+    background-color: #0f1219;
+    background-image:
+            linear-gradient(
+                    90deg,
+                    rgba(8, 10, 18, .93) 0%,
+                    rgba(8, 10, 18, .86) 22%,
+                    rgba(8, 10, 18, .55) 43%,
+                    rgba(8, 10, 18, .05) 75%,
+                    transparent 100%
+            ),
+            url("img/back.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+header {
+    position: absolute;
+    z-index: 10;
+    top: 40px;
+    left: 50%;
+    width: min(calc(100% - 40px), 1728px);
+    transform: translateX(-50%);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.afisha {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.afisha a {
+    display: flex;
+    align-items: center;
+}
+
+.afisha a img {
+    display: block;
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+.afisha > svg {
+    width: 3px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.afisha-date {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    color: #e1e1e5;
+    white-space: nowrap;
+}
+
+.search-avatar {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.search-avatar svg {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+}
+
+.search-avatar img {
+    display: block;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.main-content {
+    position: relative;
+    z-index: 2;
+    max-width: 860px;
+}
+
+.film-type {
+    margin-bottom: 26px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.35;
+}
+
+.film-name {
+    margin-bottom: 26px;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: 1px;
+}
+
+.film-author {
+    margin-bottom: 16px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.not-main-text {
+    color: #aaaab4;
+    font-weight: 400;
+}
+
+.description {
+    max-width: 830px;
+    margin-bottom: 25px;
+    color: #aaaab4;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.48;
+}
+
+
+.rating {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 47px;
+}
+
+.star {
+    font-size: 36px;
+    line-height: 1;
+}
+
+.star.filled {
+    color: #ffe000;
+}
+
+.star.empty {
+    color: transparent;
+    -webkit-text-stroke: 1.5px #fff;
+}
+
+
+.hero-buttons {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    margin-bottom: 54px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-width: 272px;
+    min-height: 64px;
+    padding: 0 28px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 21px;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background .2s ease;
+}
+
+.btn-primary {
+    border-color: #e50914;
+    background: #e50914;
+}
+
+.btn-primary:hover {
+    background: #b80710;
+}
+
+.btn-secondary {
+    background: transparent;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, .12);
+}
+
+.play-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: #fff;
+    color: #e50914;
+    font-size: 13px;
+}
+
+
+.popular-heading {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.popular-list {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+    width: max-content;
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.popular-list::-webkit-scrollbar {
+    display: none;
+}
+
+.popular-card {
+    flex: 0 0 150px;
+    width: 150px;
+    height: 210px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, .75);
+    background: #242424;
+}
+
+.popular-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CAROUSEL ARROWS */
+
+.carousel-arrows {
+
+    transform: translateY(-35px);
+}
+
+.carousel-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 41px;
+    height: 41px;
+    padding: 0;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .3);
+    color: #fff;
+    font-size: 26px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+/* AGE RATING */
+
+.age-rating {
+    position: absolute;
+    z-index: 5;
+    right: max(0px, calc((100% - 1728px) / 2));
+    bottom: 270px;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    width: 175px;
+    height: 65px;
+    background: rgba(181, 181, 186, .78);
+    color: #fff;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.age-bar {
+    align-self: stretch;
+    flex: 0 0 32px;
+    background: #e50914;
+}
+
+/* LAPTOP */
+
+@media (max-width: 1500px) {
+    body {
+        padding: 30px 20px;
+    }
+
+    body > .container {
+        min-height: 900px;
+        padding: 185px 35px 40px;
+    }
+
+    header {
+        top: 30px;
+    }
+
+    header .container {
+        padding: 32px 35px;
+    }
+
+    .afisha a img {
+        width: 120px;
+    }
+
+    .afisha-date {
+        font-size: 18px;
+    }
+
+    .search-avatar img {
+        width: 58px;
+        height: 58px;
+    }
+
+    .search-avatar svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .main-content {
+        max-width: 720px;
+    }
+
+    .film-type {
+        font-size: 24px;
+    }
+
+    .film-name {
+        font-size: 52px;
+    }
+
+    .film-author {
+        font-size: 20px;
+    }
+
+    .description {
+        max-width: 700px;
+        font-size: 19px;
+    }
+
+    .rating {
+        margin-bottom: 36px;
+    }
+
+    .star {
+        font-size: 30px;
+    }
+
+    .hero-buttons {
+        gap: 50px;
+        margin-bottom: 42px;
+    }
+
+    .btn {
+        min-width: 220px;
+        min-height: 54px;
+        font-size: 17px;
+    }
+
+    .popular-heading {
+        font-size: 18px;
+    }
+
+    .popular-list {
+        gap: 32px;
+    }
+
+    .popular-card {
+        flex-basis: 120px;
+        width: 120px;
+        height: 168px;
+    }
+
+    .carousel-arrows {
+        width: 730px;
+    }
+
+    .age-rating {
+        bottom: 75px;
+        width: 140px;
+        height: 52px;
+        font-size: 18px;
+    }
+
+    .age-bar {
+        flex-basis: 25px;
+    }
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    body > .container {
+        min-height: 800px;
+        padding: 160px 25px 35px;
+        background-position: 60% center;
+    }
+
+    header .container {
+        padding: 25px;
+    }
+
+    .main-content {
+        max-width: 80%;
+    }
+
+    .film-type {
+        font-size: 20px;
+    }
+
+    .film-name {
+        font-size: 44px;
+    }
+
+    .film-author {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        gap: 20px;
+    }
+
+    .popular-list {
+        gap: 20px;
+    }
+
+    .popular-card {
+        flex-basis: 100px;
+        width: 100px;
+        height: 140px;
+    }
+
+    .carousel-arrows {
+        display: none;
+    }
+
+    .age-rating {
+        bottom: 55px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+        background: #0f1219;
+    }
+
+    header {
+        top: 0;
+        width: 100%;
+    }
+
+    header .container {
+        padding: 20px 16px;
+    }
+
+    .afisha {
+        gap: 10px;
+    }
+
+    .afisha a img {
+        width: 85px;
+    }
+
+    .afisha > svg {
+        height: 20px;
+    }
+
+    .afisha-date {
+        font-size: 12px;
+    }
+
+    .search-avatar {
+        gap: 12px;
+    }
+
+    .search-avatar svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .search-avatar img {
+        width: 36px;
+        height: 36px;
+    }
+
+    body > .container {
+        min-height: 100vh;
+        padding: 300px 18px 40px;
+        background-image:
+                linear-gradient(
+                        0deg,
+                        #0f1219 0%,
+                        rgba(15, 18, 25, .97) 32%,
+                        rgba(15, 18, 25, .45) 70%,
+                        rgba(15, 18, 25, .2) 100%
+                ),
+                url("img/back.png");
+        background-size: auto, auto 500px;
+        background-position: center, top center;
+        background-repeat: no-repeat;
+    }
+
+    .main-content {
+        max-width: 100%;
+    }
+
+    .film-type {
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .film-name {
+        margin-bottom: 16px;
+        font-size: 34px;
+    }
+
+    .film-author {
+        font-size: 12px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .rating {
+        margin-bottom: 25px;
+    }
+
+    .star {
+        font-size: 25px;
+    }
+
+    .hero-buttons {
+        gap: 12px;
+        margin-bottom: 35px;
+    }
+
+    .btn {
+        min-width: 0;
+        min-height: 42px;
+        padding: 0 12px;
+        border-width: 2px;
+        border-radius: 6px;
+        font-size: 11px;
+    }
+
+    .popular-heading {
+        font-size: 13px;
+    }
+
+    .popular-list {
+        gap: 14px;
+    }
+
+    .popular-card {
+        flex-basis: 88px;
+        width: 88px;
+        height: 124px;
+    }
+
+    .carousel-arrows,
+    .age-rating {
+        display: none;
+    }
+}
+
+@media (max-width: 360px) {
+    .afisha-date,
+    .afisha > svg {
+        display: none;
+    }
+
+    .film-name {
+        font-size: 29px;
+    }
+}
+
+.carousel-arrows {
+    position: absolute;
+    z-index: 5;
+    bottom: 267px;
+    left: 890px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 41px;
+}
+
+.carousel-arrow {
+    display: block;
+    width: 41px;
+    height: 41px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.carousel-arrow img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Левая стрелка */
+.carousel-arrow.prev img {
+    transform: rotate(180deg);
+}
+
+/* Правая стрелка */
+.carousel-arrow.next img {
+    transform: none;
+}
+.carousel-arrow.prev {
+    opacity: 0.6;
+}
